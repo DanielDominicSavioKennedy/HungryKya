@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% block title %}|home{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://source.unsplash.com/random/400x150/?cake" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Welcome to HungryKya!!</h1>
+                  <p>Let's Cook Food</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/400x150/?dessert" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Feel the Yumm!!</h5>
+                  <p>Part of the secret to success in life is to eat what you like</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/400x150/?indianfood" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Note!!</h5>
+                  <p>To eat is a necessity, but to eat intelligently is an art</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+</div>
+
+<!-- Must try -->
+
+<div class="container">
+         <div class="text-center py-4"><h1>Must Try</h1></div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img height="300" src="static\Emerald Pea Pasta.jpg" alt="" srcset="">
+              <div class="card-body">
+                <p class="card-text">
+                  <h5>Emerald Pea Pasta</h5>
+                  Procedure:
+                  Place peas & mint in a food processor & puree. Add remaining ingredients & pulse until a ball of dough forms. Turn out onto a floured surface & knead until smooth & pliable like a firm bread dough. Place dough in a bowl, cover with plastic wrap & let rest for at least 30 minutes. Shape & cook dough as desired.
+                  </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img height="300" src="static\Gooey Brownies.jpg" alt="" srcset="">
+              <div class="card-body">
+                <p class="card-text">
+                  <h5>Gooey Brownies</h5>
+                  Procedure:
+                  Prepare brownie batter according to package directions; stir in sour cream, chocolate morsels, and pecans. Spoon into a greased 13 x9 inch pan.</p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img height="300" src="static\Polo Dosa.jpg" alt="" srcset="">
+              <div class="card-body">
+                <p class="card-text">
+                  <h5>Polo Dosa</h5>
+                  Procedure:
+                  HEAT a dosa plate or a non stick tawa. Put in a little oil or ghee and smear it well. Pour on 75 ml polo dosa batter. Spread it well. Cook till done. Similarly prepare three more polo dosas. Mix the grated coconut and jaggery. Serve the sweetened coconut with the polo dosa.</p>
+               
+              </div>
+            </div>
+          </div>
+
+</div>
+{% endblock body %}

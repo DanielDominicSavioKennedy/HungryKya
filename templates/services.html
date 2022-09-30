@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+|recipes
+{% endblock title %}
+
+{% block body %}
+<div class="container">
+    
+    <form method="post" action="/services">
+      {% csrf_token %}
+          <div class="form-group my-4">
+              <input type="text" class="form-control mx-5 "  id="name" name="query" placeholder="Enter the dish to search">
+              <button class="btn btn-outline-success my-2 mx-5" type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    {% if que %}
+        
+    <div class="container">
+    <h2 class="text-center">Search results for '{{que}}'</h2>
+    <ul>
+    {% for i in response%}
+    <div class="my-3 ">
+        <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+         
+          <div class="card-body">
+            <p class="card-text"> <u><h3>{{i.title}}</h3></u> <br>
+
+            <h5>Ingerdients: <br></h5>
+            <p>{{i.ingredients}}</p> <br>
+           
+            
+
+            <h5>Procedure: <br></h5>
+            <p>{{i.instructions}}</p>
+            <p>Servings:{{i.servings}}</p>
+            
+        </p>
+            
+          </div>
+        </div>
+      </div>
+    {% endfor%}
+    </ul>
+    {% endif %}
+    </div>
+{% endblock body %}
