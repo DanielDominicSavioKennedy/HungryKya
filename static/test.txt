@@ -1,1 +1,0 @@
-Hello im test,txt file im here to test if static file is working
