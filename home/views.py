@@ -33,7 +33,7 @@ def services(request):
         que = request.POST.get('query')
         api_url = 'https://api.api-ninjas.com/v1/recipe?query='
         res = requests.get(api_url + que, headers={'X-Api-Key': 'ne11mU1MzaY43tX8zsPF2w==C9IJUTIRRqjMHtBl'}).json()
-        print(res)
+        #print(res)
         return render(request,'services.html',{'response':res,'que':que})
     else:
         return render(request,'services.html')  
